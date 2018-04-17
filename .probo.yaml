@@ -1,0 +1,27 @@
+assets:
+  - concrete5demo-2018-04-17.sql.gz
+steps:
+  - name: Probo Concrete5 LAMP site setup.
+    plugin: LAMPApp
+    database: concrete5demo-2018-04-17.sql.gz
+    databaseName: concrete5demo
+    databaseUser: concrete5demo
+    databaseGzipped: true
+    subDirectory: public
+  - plugin: Script
+    name: Run visual comparision to test via backtrac.io and comment in Jira
+    script: |
+      touch $SRC_DIR/public/application/config/live.database.php
+      {
+              echo '<?php'
+              echo "  return array("
+              echo "    default-connection' => 'concrete',"
+              echo "    'connections' => array("
+              echo "      'concrete' => array("
+              echo "      'driver' => 'c5_pdo_mysql',"  
+              echo "      'server' => 'localhost','"
+              echo "      'database' => 'concrete5demo','"
+              echo "      'username' => 'concrete5demo','"
+              echo "      'password' => 'strongpassword',"
+              echo "      'charset' => 'utf8'"
+      } >> $SRC_DIR/public/application/config/live.database.php
