@@ -1,4 +1,3 @@
-Steps:
-  - name: Say Hello
-    plugin: Shell
-    command: echo 'Hello, World!!'
+steps:
+  - name: Probo site setup
+    plugin: LAMPApp
