@@ -1,3 +1,4 @@
-Steps:
-  - name: Hello
-    command: echo 'Hello World'
+steps:
+  - name: Test Connection
+    plugin: Shell
+    command: 'echo "Hello World!"'
