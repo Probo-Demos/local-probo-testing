@@ -1,6 +1,6 @@
 image: proboci/ubuntu:18.04-php7.3
 steps:
-  - name: Probo Concrete5 LAMP site setup..
+  - name: Probo Concrete5 LAMP site setup.
     plugin: LAMPApp
     databaseName: concrete5demo
     databaseUser: concrete5demo
