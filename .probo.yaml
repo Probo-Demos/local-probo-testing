@@ -1,0 +1,9 @@
+assets:
+  - probo-credentials.yml
+notifications:
+  jira:
+    - message: 'Custom message: New Probo build for project `$PROJECT_NAME` on branch `$BRANCH_NAME` at $BUILD_URL'
+steps:
+  - name: Test Connection..
+    plugin: Shell
+    command: 'echo "Hello World!"'
