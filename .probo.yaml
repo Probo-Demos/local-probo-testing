@@ -1,5 +1,5 @@
 image: proboci/ubuntu:18.04-php7.3
 steps:
-  - name: Test Connection
+  - name: Test Connection!
     plugin: Shell
     command: 'echo "Hello World!"'
