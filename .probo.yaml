@@ -8,5 +8,3 @@ steps:
   - name: StaticApp Test
     plugin: StaticApp
     buildDirectory: 'test'
-    buildCommands:
-      /src/build
