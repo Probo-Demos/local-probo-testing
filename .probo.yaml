@@ -5,5 +5,5 @@ steps:
     script: |
       mkdir /src/build
       echo "hello world" > /src/build/index.html
-  - name: StaticApp Test.
+  - name: StaticApp Test..
     plugin: StaticApp
