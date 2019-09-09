@@ -9,4 +9,4 @@ steps:
     plugin: StaticApp
     buildDirectory: test
     buildCommands: |
-     /src/build
+      /src/build
