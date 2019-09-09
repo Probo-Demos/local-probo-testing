@@ -7,4 +7,3 @@ steps:
       echo "hello world" > /src/test/index.html
   - name: StaticApp Test
     plugin: StaticApp
-    buildDirectory: 'test'
