@@ -3,8 +3,7 @@ steps:
   - name: Setting up test html.
     plugin: Script
     script: |
-      mkdir /src/test
-      echo "hello world" > /src/test/index.html
+      mkdir /src/build
+      echo "hello world" > /src/build/index.html
   - name: StaticApp Test.
     plugin: StaticApp
-    buildDirectory: test
