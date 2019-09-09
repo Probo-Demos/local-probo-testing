@@ -1,6 +1,6 @@
 image: proboci/ubuntu:18.04-php7.3
 steps:
-  - name: Setting up test html..
+  - name: Setting up test html.
     plugin: Script
     script: |
       mkdir /src/test
