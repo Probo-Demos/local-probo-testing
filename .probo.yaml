@@ -1,5 +1,5 @@
 steps:
-  - name: Setting up test html.
+  - name: Setting up test html..
     plugin: Script
     script: |
       mkdir /src/build
