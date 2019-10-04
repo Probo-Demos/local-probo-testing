@@ -1,0 +1,6 @@
+steps:
+  - name: Setting up test html.
+    plugin: Script
+    script: |
+      mkdir /src/build
+      echo "hello world" > /src/build/index.html
