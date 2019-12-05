@@ -13,6 +13,8 @@ steps:
     clearCaches: false
     subDirectory: web
     drupalVersion: 8
+    varnish:
+      enable: true
   - name: Install Drupal site.
     plugin: Script
     script: |
